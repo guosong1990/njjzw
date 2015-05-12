@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+    <ImageView 
+        android:id="@id/hellokitty" 
+        android:background="@drawable/hellokitty" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginTop="5.0dip" />
+    <Button 
+        android:id="@id/btn_prev" 
+        android:background="@drawable/prev" 
+        android:layout_width="48.0dip" 
+        android:layout_height="48.0dip" 
+        android:layout_toRightOf="@id/hellokitty" 
+        android:layout_above="@id/biankuang" />
+    <Button 
+        android:id="@id/btn_add" 
+        android:background="@drawable/add" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/btn_prev" 
+        android:layout_above="@id/biankuang" />
+    <Button 
+        android:id="@id/btn_next" 
+        android:background="@drawable/next" 
+        android:layout_width="48.0dip" 
+        android:layout_height="48.0dip" 
+        android:layout_toRightOf="@id/btn_add" 
+        android:layout_above="@id/biankuang" />
+    <ImageView 
+        android:id="@id/biankuang" 
+        android:background="@drawable/biankuang" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/hellokitty" 
+        android:layout_centerHorizontal="true" />
+    <TextView 
+        android:textSize="20.0sp" 
+        android:textStyle="bold" 
+        android:textColor="#ffffffff" 
+        android:id="@id/tv_question" 
+        android:background="#ff80ccec" 
+        android:paddingLeft="10.0dip" 
+        android:paddingTop="10.0dip" 
+        android:paddingRight="10.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="200.0dip" 
+        android:layout_marginLeft="20.0dip" 
+        android:layout_marginTop="3.0dip" 
+        android:layout_marginRight="20.0dip" 
+        android:layout_below="@id/biankuang" />
+    <ImageView 
+        android:id="@id/biankuang1" 
+        android:background="@drawable/biankuang1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:layout_below="@id/tv_question" 
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout 
+        android:id="@id/answer_layout" 
+        android:background="#fff06598" 
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip" 
+        android:layout_marginLeft="20.0dip" 
+        android:layout_marginTop="3.0dip" 
+        android:layout_marginRight="20.0dip" 
+        android:layout_below="@id/biankuang1">
+        <ImageView 
+            android:id="@id/hellokitty1" 
+            android:background="@drawable/hellokitty1" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="10.0dip" 
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true" />
+        <TextView 
+            android:textSize="20.0sp" 
+            android:textStyle="bold" 
+            android:textColor="#ffffffff" 
+            android:id="@id/tv_answer" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="@string/answer_text" 
+            android:layout_toLeftOf="@id/hellokitty1" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>
